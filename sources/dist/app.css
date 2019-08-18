@@ -8936,11 +8936,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .ui-tabs-title {
   text-decoration: none;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 0; }
 
 .ui-tabs-item span {
   font-size: 1rem;
-  opacity: 0.8; }
+  opacity: 0.8;
+  margin: 0; }
 
 .tabs {
   background: rgba(225, 225, 225, 0.2);
@@ -8958,7 +8960,8 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 25%;
   flex: 0 0 25%;
-  text-align: center; }
+  text-align: center;
+  padding: O; }
 
 .tabs-items.active {
   color: #414141;
@@ -8966,11 +8969,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .tabs-items h3 {
   text-decoration: none;
-  font-size: 18px; }
+  font-size: 18px;
+  margin: 0; }
 
 .tabs-items span {
   font-size: 1rem;
-  opacity: 0.8; }
+  opacity: 0.8;
+  margin: 0; }
 
 body {
   font-family: 'Raleway', sans-serif;
