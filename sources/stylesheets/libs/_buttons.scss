@@ -1,0 +1,84 @@
+.ui-btn {
+  font-size: 1.2rem;
+  color: $ui-dark;
+  text-decoration: none;
+  background-color: $ui-light;
+  border: solid 1px rbga(75, 75, 75, 1);
+  border-radius: 6px;
+  padding: 10px 20px;
+  transition-duration: 0.3s;
+
+  &:hover {
+    text-decoration: none;
+    color: rgba(65, 65, 65, 0.8);
+    background-color: rgba(225, 225, 225, 0.8);
+    border: solid 1px rbga(75, 75, 75, 0.8);
+  }
+}
+
+
+.ui-btn-gross, .ui-btn-rounded, .ui-btn-outline {
+  @extend .ui-btn;
+}
+
+.ui-btn-gross {
+  border-radius: 2px;
+}
+
+.ui-btn-rounded {
+  border-radius: 25px;
+}
+
+.ui-btn-outline {
+  background-color: white;
+  border: 2px solid $ui-dark;
+
+  &:hover {
+    border: none;
+    background-color: $ui-dark;
+    color: white;
+  }
+}
+
+.ui-primary {
+  color: white;
+  background-color: $primary;
+
+  &:hover {
+    background-color: rgba($primary, 0.8);
+    color: white;
+  }
+}
+
+.ui-danger {
+  color: white;
+  background-color: $danger;
+
+  &:hover {
+    background-color: rgba($danger, 0.8);
+    color: white;
+  }
+}
+.ui-btn-outline.ui-primary {
+  background-color: white;
+  border: 2px solid $primary;
+  color: $primary;
+
+  &:hover {
+    border: none;
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.ui-btn-outline.ui-danger {
+  background-color: white;
+  border: 2px solid $danger;
+  color: $danger;
+
+  &:hover {
+    border: none;
+    background-color: $danger;
+    color: white;
+  }
+}

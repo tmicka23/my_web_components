@@ -1,0 +1,79 @@
+.ui-card {
+  width: 300px;
+  border: 1px solid rgba($ui-dark, 0.1);
+  border-radius: 10px;
+  transition: transform .3s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.ui-card-header {
+  position: relative;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(-225deg, rgba(40, 30, 30, 0.6) 30%, rgba(45, 55, 45, 0.5) 50%), url('https://source.unsplash.com/random/300x200');
+  background-size: cover;
+  height: 200px;
+  color: white;
+  transition: transform .2s;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
+
+.ui-card-avatar {
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.ui-card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.ui-card-price {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.ui-card-body {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.ui-card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.ui-card-footer {
+  position: relative;
+  font-size: 1.4rem;
+  padding: 10px;
+  text-align: right;
+}
+
+.ui-card-control a {
+  text-decoration: none;
+  color: rgba($ui-dark, 0.6);
+  transition: transform .2s;
+
+  &:hover {
+    text-decoration: none;
+    color: $ui-dark;
+    transform: scale(1.01);
+  }
+
+}

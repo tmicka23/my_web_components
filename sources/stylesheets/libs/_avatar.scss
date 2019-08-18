@@ -1,0 +1,17 @@
+%avatar {
+  width: 50px;
+  max-height: 50px;
+}
+
+
+.avatar-circle, .avatar-rounded {
+  @extend %avatar;
+}
+
+.avatar-circle {
+  border-radius: 50%;
+}
+
+.avatar-rounded {
+  border-radius: 8px;
+}

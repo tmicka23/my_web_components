@@ -1,0 +1,47 @@
+.banner {
+  background: linear-gradient(-225deg, rgba(40, 30, 30, 0.8) 30%, rgba(45, 55, 45, 0.7) 50%), url('https://source.unsplash.com/random/');
+  background-size: cover;
+  height: 70vh;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h2 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.banner-content p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.banner-cta {
+  position: absolute;
+  bottom: -3%;
+  text-align: center;
+}
+
+.banner-author {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  text-align: center;
+}
+
+.banner-author img {
+  border: 2px solid white;
+}
+
+.banner-author span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+}
