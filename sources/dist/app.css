@@ -9077,14 +9077,16 @@ a.text-dark:hover, a.text-dark:focus {
 .product-info h2, P {
   margin: 0; }
 
-.product img {
+.product > img {
   background: -webkit-linear-gradient(315deg, #281e1e 30%, #2d372d 50%);
   background: -o-linear-gradient(315deg, #281e1e 30%, #2d372d 50%);
   background: linear-gradient(-225deg, #281e1e 30%, #2d372d 50%);
   background-size: cover;
   -o-object-fit: cover;
   object-fit: cover;
-  opacity: 0.8; }
+  opacity: 0.8;
+  width: 120px;
+  max-height: 120px; }
 
 body {
   font-family: 'Raleway', sans-serif;

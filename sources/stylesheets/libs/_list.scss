@@ -39,9 +39,11 @@
   margin: 0;
 }
 
-.product img {
+.product > img {
   background: linear-gradient(-225deg, rgba(40, 30, 30, 1) 30%, rgba(45, 55, 45, 1) 50%);
   background-size: cover;
   object-fit: cover;
   opacity: 0.8;
+  width: 120px;
+  max-height: 120px;
 }
