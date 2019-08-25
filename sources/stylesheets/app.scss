@@ -9,6 +9,7 @@
 @import "libs/_banner.scss";
 @import "libs/_tabs.scss";
 @import "libs/_list.scss";
+@import "paper/paper-kit.scss";
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -39,4 +40,8 @@ p {
 
 .rounded {
   border-radius: 10px !important;
+}
+
+.navbar {
+  box-shadow: none;
 }
