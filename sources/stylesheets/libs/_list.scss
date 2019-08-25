@@ -1,0 +1,40 @@
+.product {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba($ui-light, 0.4);
+  border-radius: 10px;
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 1rem;
+  transition-duration: 0.3s;
+}
+
+.product:hover {
+  background: rgba($ui-light, 0.8);
+}
+
+.product:hover .product-icon {
+  font-size: 2.2rem;
+  padding: 0 2.5rem 0 2.5rem;
+}
+
+.product-icon {
+  flex: 0 0 30px;
+  font-size: 1.8rem;
+  padding: 0 2rem 0 2rem;
+  transition-duration: 0.3s;
+}
+
+.product-info {
+  flex: 1 0 auto;
+  padding-left: 2rem;
+}
+
+.product li {
+  font-size: 1.4rem;
+}
+
+.product-info h2, P {
+  margin: 0;
+}

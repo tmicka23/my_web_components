@@ -41,11 +41,11 @@
 // *****************************************************************//
 
 .tabs {
-  background: rgba($ui-light, 0.2);
-  color: $danger;
+  background: rgba($ui-light, 0.6);
+  color: $ui-dark;
   display: flex;
-  justify-content: space-around;
-  padding: 1rem 1rem 0 1rem;
+  justify-content: space-between;
+  padding: 1rem 0 0 0;
   border-radius: 10px 10px 0 0;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .tabs-items.active {
-  color: $ui-dark;
+  color: $danger;
   border-bottom: 3px solid rgba($danger, 0.8)
 }
 

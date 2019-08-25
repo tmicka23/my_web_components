@@ -8749,6 +8749,10 @@ a.text-dark:hover, a.text-dark:focus {
   width: 50px;
   max-height: 50px; }
 
+.avatar-small {
+  width: 30px;
+  max-height: 30px; }
+
 .avatar-circle {
   border-radius: 50%; }
 
@@ -8764,9 +8768,10 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 300; }
 
 .ui-card {
-  width: 300px;
+  width: 250px;
   border: 1px solid rgba(65, 65, 65, 0.1);
   border-radius: 10px;
+  margin-bottom: 2rem;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   -o-transition: transform .3s;
@@ -8780,11 +8785,11 @@ a.text-dark:hover, a.text-dark:focus {
 .ui-card-header {
   position: relative;
   border-radius: 8px 8px 0 0;
-  background: -webkit-linear-gradient(315deg, rgba(40, 30, 30, 0.6) 30%, rgba(45, 55, 45, 0.5) 50%), url("https://source.unsplash.com/random/300x200");
-  background: -o-linear-gradient(315deg, rgba(40, 30, 30, 0.6) 30%, rgba(45, 55, 45, 0.5) 50%), url("https://source.unsplash.com/random/300x200");
-  background: linear-gradient(-225deg, rgba(40, 30, 30, 0.6) 30%, rgba(45, 55, 45, 0.5) 50%), url("https://source.unsplash.com/random/300x200");
+  background: -webkit-linear-gradient(315deg, rgba(30, 20, 20, 0.6) 30%, rgba(35, 45, 35, 0.5) 50%), url("https://source.unsplash.com/random/300x200");
+  background: -o-linear-gradient(315deg, rgba(30, 20, 20, 0.6) 30%, rgba(35, 45, 35, 0.5) 50%), url("https://source.unsplash.com/random/300x200");
+  background: linear-gradient(-225deg, rgba(30, 20, 20, 0.6) 30%, rgba(35, 45, 35, 0.5) 50%), url("https://source.unsplash.com/random/300x200");
   background-size: cover;
-  height: 200px;
+  height: 150px;
   color: white;
   -webkit-transition: -webkit-transform .2s;
   transition: -webkit-transform .2s;
@@ -8812,9 +8817,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .ui-card-price {
   position: absolute;
-  left: 10px;
-  bottom: 10px;
-  font-size: 1.8rem;
+  right: 10px;
+  top: 10px;
+  font-size: 1.4rem;
   font-weight: 700; }
 
 .ui-card-body {
@@ -8846,6 +8851,52 @@ a.text-dark:hover, a.text-dark:focus {
     -webkit-transform: scale(1.01);
     -ms-transform: scale(1.01);
     transform: scale(1.01); }
+
+.ui-category-card {
+  position: relative;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(315deg, rgba(30, 20, 20, 0.6) 30%, rgba(35, 45, 35, 0.5) 50%), url("https://source.unsplash.com/random/200x150");
+  background: -o-linear-gradient(315deg, rgba(30, 20, 20, 0.6) 30%, rgba(35, 45, 35, 0.5) 50%), url("https://source.unsplash.com/random/200x150");
+  background: linear-gradient(-225deg, rgba(30, 20, 20, 0.6) 30%, rgba(35, 45, 35, 0.5) 50%), url("https://source.unsplash.com/random/200x150");
+  background-size: cover;
+  height: 150px;
+  color: white;
+  margin-bottom: 2rem;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s; }
+  .ui-category-card:hover {
+    -webkit-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    transform: scale(1.06); }
+
+.ui-category-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  padding: 0;
+  margin: 0; }
+
+.ui-category-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  position: absolute;
+  top: 40%;
+  left: auto;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0; }
+
+.ui-category-icon {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 10px;
+  right: 15px; }
 
 .badge {
   position: relative;
@@ -8945,14 +8996,15 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0; }
 
 .tabs {
-  background: rgba(225, 225, 225, 0.2);
-  color: #dc3545;
+  background: rgba(225, 225, 225, 0.6);
+  color: #414141;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding: 1rem 1rem 0 1rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 0 0 0;
   border-radius: 10px 10px 0 0; }
 
 .tabs-items {
@@ -8964,7 +9016,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: O; }
 
 .tabs-items.active {
-  color: #414141;
+  color: #dc3545;
   border-bottom: 3px solid rgba(220, 53, 69, 0.8); }
 
 .tabs-items h3 {
@@ -8977,13 +9029,61 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 0.8;
   margin: 0; }
 
+.product {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(225, 225, 225, 0.4);
+  border-radius: 10px;
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 1rem;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.product:hover {
+  background: rgba(225, 225, 225, 0.8); }
+
+.product:hover .product-icon {
+  font-size: 2.2rem;
+  padding: 0 2.5rem 0 2.5rem; }
+
+.product-icon {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  font-size: 1.8rem;
+  padding: 0 2rem 0 2rem;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.product-info {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  padding-left: 2rem; }
+
+.product li {
+  font-size: 1.4rem; }
+
+.product-info h2, P {
+  margin: 0; }
+
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 10px;
   color: #414141;
   background-color: #fafafa;
-  padding: 2rem 0;
-  margin-bottom: 50rem; }
+  margin: 0 0 50rem 0;
+  padding: 0; }
 
 h1 {
   text-align: center;
@@ -8999,6 +9099,9 @@ h3 {
 p {
   font-size: 1.4rem;
   font-weight: 300; }
+
+.rounded {
+  border-radius: 10px !important; }
 
 
 
